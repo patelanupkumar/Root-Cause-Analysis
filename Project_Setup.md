@@ -15,3 +15,15 @@ In overview, the following steps were taken:
 * Data was prepared for modeling.
 * Clustering was performed to identify patterns and cluster properties.
 * Analysis and insights were generated based on the results obtained from the previous steps.
+
+# Data Cleaning and Merging
+Data cleaning and merging were performed as the initial steps in the analysis process. The dataset used for the analysis consisted of both candidate and test data, with 509,722 and 2,852,791 data points, respectively. The candidate data had 40 dimensions, while the test data had 18 dimensions.
+
+During the data cleaning process, it was identified that a few columns had null values and a few outliers. It was important to handle these issues as they could have interfered with the analysis, making it difficult to attribute results to specific causes.
+
+# Feature Selection and Engineering
+The success metric chosen for our analysis was "pass" instead of the score, as the score is a continuous variable that may not have been determined solely by the features analyzed. Our focus was to identify patterns of success in passing rather than the score.
+
+Identifying important features was a crucial step in the analysis as it helped reduce noise caused by unimportant features. By identifying the features that impacted test performance more, we were able to capture more variation and attribute it to the relevant features. This information could later be used for recommendations.
+
+We used causal inference techniques to identify the important features and validate them against the explanations provided by the client.
