@@ -27,3 +27,22 @@ The success metric chosen for our analysis was "pass" instead of the score, as t
 Identifying important features was a crucial step in the analysis as it helped reduce noise caused by unimportant features. By identifying the features that impacted test performance more, we were able to capture more variation and attribute it to the relevant features. This information could later be used for recommendations.
 
 We used causal inference techniques to identify the important features and validate them against the explanations provided by the client.
+
+# Data preparation
+The goal was to identify testing performance disparities among different regions in the jurisdiction. Therefore, candidate and test data with important features were needed.
+
+After merging, the candidate data and test data had many features with multiple dimensions, as the analysis was at the candidate's zipcode level. The data was rolled up to the candidate zip-code level, retaining important features extracted from the previous step.
+
+# Clustering
+Candidate's performance had an impact on the region's performance, and clustering was used to group similar performing regions together. Clustering was a crucial step in the process, with the goal of grouping similar performing regions in the country and analyzing funnel drop-offs and opportunities at the regional level. The most important part of the funnel was to identify the best-performing funnel and identify common behaviors among the group.
+
+Common behaviors were co-related with the testing and preparation facilities, and a thesis was built on solving for them effectively.
+
+# Analysis and Insights
+The analysis process delivered several insights that could be used to improve testing performance and increase the persistence rates of individuals pursuing their high school equivalency diploma through the client's testing service.
+
+Firstly, the analysis identified important features that impacted test performance, which could be used to recommend areas for improvement to the relevant jurisdictions.
+
+Secondly, clustering analysis grouped similar performing regions together, allowing the identification of common behaviors and potential causes for the observed testing performance disparities. This information could be used to recommend targeted solutions to improve testing facilities and preparation resources in specific regions.
+
+Lastly, the analysis focused on the pass rate as the success metric, instead of the score, allowing for the identification of patterns of success in passing. This could be used to recommend targeted interventions to support individuals in passing the academic subject tests, thereby improving their lives by providing access to better employment opportunities and higher education.
